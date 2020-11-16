@@ -40,11 +40,18 @@
                 </div>
             </div>
             <div class="w-order-status">
-                <input class="w-order-status__btn" type="submit" value="Доставлен">
-                <input class="w-order-status__btn" type="submit" value="Возврат">
+                <input class="w-order-status__btn js-btn-delivered" type="submit" value="Доставлен">
+                <input class="w-order-status__btn w-order-status__btn_indent" type="submit" value="Возврат">
+
+            </div>
+            <div class="check-delivered">
+                <div class="check-delivered__flex">
+                    <span>Доставлен</span>
+                    <i class="fa fa-check"></i>
+                </div>
             </div>
         </div>
-        <div class="w-order">
+        <div class="w-order w-shopper">
             <div class="w-order-info">
                 <span class="w-order-info__head">
                     О покупателе
@@ -88,24 +95,232 @@
             <input type="radio" name="tab-btn" id="tab-btn-6" value="">
             <label class="w-tabs__label w-tabs__label-whatsapp" for="tab-btn-6"><i class="fa w-tabs__icon w-tabs__icon-whatsapp"></i></label>
             <div id="content-1" class="w-tabs-content">
-                Содержимое 1.ccccccc..
+                <div class="w-tabs-wrap">
+                    <div class="w-caption">
+                        <div class="w-caption__text">
+                            <span>Статус</span>
+                        </div>
+                        <div class="w-caption__date">
+                            <span>Дата</span>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>В месте получения</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>02.07.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>В пути</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>26.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Посылка отправлена</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>25.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Трек-номер добавлен</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>24.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="content-2" class="w-tabs-content">
-                Содержимое 2..sssssss.
+                <div class="w-tabs-wrap">
+                    <div class="w-caption">
+                        <div class="w-caption__text">
+                            <span>Текст сообщения</span>
+                        </div>
+                        <div class="w-caption__date">
+                            <span>Дата</span>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Ваш заказ отправлен Почтой России. Трек номер 1234567891234</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>26.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Ваш заказ на почте ул. Ленина, д.1. Трек номер 1234567891234и</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>24.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Ваш заказ на почте ул. Ленина, д.1. Трек номер 1234567891234и</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>22.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="content-3" class="w-tabs-content">
-                Содержимое 3...22222
+                <div class="w-tabs-wrap">
+                    <div class="w-caption">
+                        <div class="w-caption__text">
+                            <span>Текст разговора</span>
+                        </div>
+                        <div class="w-caption__date">
+                            <span>Дата</span>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Здравствуйте. Во избежание повторных звонков, прослушайте это сообщение до конца. Получите ваш заказ на почте ул.Ленина, д.1. Трек номер 1234567891234</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>10.07.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div id="content-4" class="w-tabs-content">
-                Содержимое 4...22222
+                <div class="w-tabs-wrap">
+                    <div class="w-caption__text-bold">
+                        <span>Нет данных</span>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Покупатель не оставлял свой e-mail</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="content-5" class="w-tabs-content">
-                Содержимое 5...22222
+                <div class="w-tabs-wrap">
+                    <div class="w-caption">
+                        <div class="w-caption__text">
+                            <span>Текст сообщения</span>
+                        </div>
+                        <div class="w-caption__date">
+                            <span>Дата</span>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Ваш заказ отправлен Почтой России. Трек номер 1234567891234</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>26.02.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Ваш заказ на почте ул. Ленина, д.1. Трек номер 1234567891234и</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>01.01.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Ваш заказ на почте ул. Ленина, д.1. Трек номер 1234567891234и</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>09.05.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="content-6" class="w-tabs-content">
-                Содержимое 6...22222
+                <div class="w-tabs-wrap">
+                    <div class="w-caption">
+                        <div class="w-caption__text">
+                            <span>Текст сообщения</span>
+                        </div>
+                        <div class="w-caption__date">
+                            <span>Дата</span>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Здесь рандомный текст Здесь рандомный текст Здесь рандомный текст. Трек номер 1234567891234</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>16.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Здесь рандомный текст Здесь рандомный текст Здесь рандомный текст Трек номер 12345и</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>14.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                    <div class="w-main">
+                        <div class="w-main__description">
+                            <span>Здесь рандомный текст Здесь рандомный текст Здесь рандомный текст Трек номер 1232324567891234и</span>
+                        </div>
+                        <div class="w-main__date">
+                            <span>22.06.2020</span>
+                            <i class="fa fa-chevrion"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="w-link">
+            <div class="w-wrap-link">
+                <a href="#" class="w-link__info">
+                    <img class="w-link__icon" src="./images/akk.png" alt="">
+                    <span class="w-link__text">Аккаунт</span>
+                </a>
+                <a href="#" class="w-link__info">
+                    <img class="w-link__icon" src="./images/sup.png" alt="">
+                    <span class="w-link__text">Поддержка</span>
+                </a>
+                <a href="#" class="w-link__info">
+                    <img class="w-link__icon" src="./images/money.png" alt="">
+                    <span class="w-link__text">Баланс</span>
+                </a>
+                <a href="#" class="w-link__info">
+                    <img class="w-link__icon" src="./images/setting.png" alt="">
+                    <span class="w-link__text">Настройки</span>
+                </a>
+            </div>
+        </div>
+
     </div>
+
+    <script type="text/javascript">
+        // document.querySelector('.js-btn-delivered').addEventListener('click', function (event) {
+        //     event.target.parentNode.classList.toggle('w-order-status__delivered');
+        // });
+    </script>
 </body>
 </html>
