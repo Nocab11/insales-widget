@@ -212,11 +212,14 @@
 }
 .w-tabs-content {
     background-color: #ffffff;
-    padding: 10px 20px 0;
+    padding: 10px 0 0 20px;
 }
 .w-tabs-wrap {
     font-size: 14px;
     line-height: 18px;
+    height: 125px;
+    overflow-y: overlay;
+    overflow-x: hidden;
 }
 .w-caption {
     display: flex;
