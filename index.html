@@ -8,9 +8,104 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="w-content">
+        <div class="w-head-wrap">
+            <div class="w-head">
+                <div class="w-head__logo">
+                    <a href="https://strekoza.ai/">
+                        <img src="./images/logo.svg" alt="Логотип">
+                    </a>
+                </div>
+                <div class="w-head__balance">
+                    <span class="w-head__balance-text">Ваш баланс:</span>
+                    <span class="w-head__balance-price">12 560 ₽ </span>
+                </div>
+            </div>
+        </div>
+        <div class="w-order">
+            <div class="w-order-info">
+                <span class="w-order-info__head">
+                    О заказе
+                </span>
+                <div class="w-order-info__description">
+                    <span class="w-order-info__name">Служба доставки</span>
+                    <span class="w-order-info__definition">Почта России</span>
+                </div>
+                <div class="w-order-info__description">
+                    <span class="w-order-info__name">Трек-номер</span>
+                    <span class="w-order-info__definition">12345678912345</span>
+                </div>
+            </div>
+            <div class="w-order-status">
+                <input class="w-order-status__btn" type="submit" value="Доставлен">
+                <input class="w-order-status__btn" type="submit" value="Возврат">
+            </div>
+        </div>
+        <div class="w-order">
+            <div class="w-order-info">
+                <span class="w-order-info__head">
+                    О покупателе
+                </span>
+                <div class="w-order-info__description">
+                    <span class="w-order-info__name">ФИО</span>
+                    <span class="w-order-info__definition">Иванов Иван Иванович</span>
+                </div>
+                <div class="w-order-info__description">
+                    <span class="w-order-info__name">Телефон</span>
+                    <span class="w-order-info__definition">+7 (999) 000 00-00</span>
+                </div>
+                <div class="w-order-info__description">
+                    <span class="w-order-info__name">E-mail</span>
+                    <span class="w-order-info__definition">ivan.ivanov@mail.ru</span>
+                </div>
+            </div>
+            <div class="w-order-status">
+                <div class="w-order-status__icon">
+                    <span class="w-order-status__number">10</span>
+                    <i class="fa fa-check"></i>
+                </div>
+                <div class="w-order-status__icon">
+                    <span class="w-order-status__number">8</span>
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+        </div>
 
+        <div class="w-tabs">
+            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label class="w-tabs__label w-tabs__label-geo" for="tab-btn-1"><i class="fa w-tabs__icon w-tabs__icon-geo"></i></label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="" >
+            <label class="w-tabs__label w-tabs__label-sms" for="tab-btn-2"><i class="fa w-tabs__icon w-tabs__icon-sms"></i></label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+            <label class="w-tabs__label w-tabs__label-tel" for="tab-btn-3"><i class="fa w-tabs__icon w-tabs__icon-tel"></i></label>
+            <input type="radio" name="tab-btn" id="tab-btn-4" value="">
+            <label class="w-tabs__label w-tabs__label-mail" for="tab-btn-4"><i class="fa w-tabs__icon w-tabs__icon-mail"></i></label>
+            <input type="radio" name="tab-btn" id="tab-btn-5" value="">
+            <label class="w-tabs__label w-tabs__label-vk" for="tab-btn-5"><i class="fa w-tabs__icon w-tabs__icon-vk"></i></label>
+            <input type="radio" name="tab-btn" id="tab-btn-6" value="">
+            <label class="w-tabs__label w-tabs__label-whatsapp" for="tab-btn-6"><i class="fa w-tabs__icon w-tabs__icon-whatsapp"></i></label>
+            <div id="content-1" class="w-tabs-content">
+                Содержимое 1.ccccccc..
+            </div>
+            <div id="content-2" class="w-tabs-content">
+                Содержимое 2..sssssss.
+            </div>
+            <div id="content-3" class="w-tabs-content">
+                Содержимое 3...22222
+            </div>
+            <div id="content-4" class="w-tabs-content">
+                Содержимое 4...22222
+            </div>
+            <div id="content-5" class="w-tabs-content">
+                Содержимое 5...22222
+            </div>
+            <div id="content-6" class="w-tabs-content">
+                Содержимое 6...22222
+            </div>
+        </div>
+    </div>
 </body>
 </html>
