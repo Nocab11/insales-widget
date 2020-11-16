@@ -246,6 +246,7 @@
 }
 .w-main__description {
     min-width: 232px;
+    max-width: 232px;
 }
 .w-main__date {
     display: flex;
